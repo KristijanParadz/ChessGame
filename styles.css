@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin:0;
+}
+body{
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+.background{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height: 100vh;
+    background-color:rgb(138, 177, 211) ;
+}
+
+.red{
+    display:flex;
+}
+
+
+.polje{
+    border:1px solid gray;
+    width:80px;
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    cursor:pointer;
+}
+.bijelo{
+    background-color: white;
+}
+.crno{
+    background-color: rgb(192, 205, 212);
+}
+.slova{
+    background-color: transparent;
+    margin-left: 79px;
+}
+.slovo{
+    background-color:transparent;
+    font-size: 2em;
+    cursor:default;
+    border: none;
+    
+}
+.broj{
+    border: none;
+    background-color: transparent;
+    font-size: 2em;
+    cursor:default;
+}

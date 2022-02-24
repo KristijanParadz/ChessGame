@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script defer src="fake_white/fake_w_pawn.js"></script>
+    <script defer src="fake_white/fake_white_knight.js"></script>
+    <script defer src="fake_white/fake_w_rook.js"></script>
+    <script defer src="fake_white/fake_w_queen.js"></script>
+    <script defer src="fake_white/fake_w_bishop.js"></script>
+    <script defer src="fake_white/fake_w_king.js"></script>
+
+    <script defer src="fake_black/fake_black_pawn.js"></script>
+    <script defer src="fake_black/fake_black_knight.js"></script>
+    <script defer src="fake_black/fake_black_bishop.js"></script>
+    <script defer src="fake_black/fake_black_queen.js"></script>
+    <script defer src="fake_black/fake_black_rook.js"></script>
+    <script defer src="fake_black/fake_black_king.js"></script>
+
+    <script defer src="w_pawn.js"></script>
+    <script defer src="b_pawn.js"></script>
+    <script defer src="w_rook.js"></script>
+    <script defer src="b_rook.js"></script>
+    <script defer src="w_knight.js"></script>
+    <script defer src="b_knight.js"></script>
+    <script defer src="w_bishop.js"></script>
+    <script defer src="b_bishop.js"></script>
+    <script defer src="w_queen.js"></script>
+    <script defer src="b_queen.js"></script>
+    <script defer src="b_king.js"></script>
+    <script defer src="w_king.js"></script>
+    <script defer src="fake_white/handle_fake_polja.js"></script>
+    <script defer src="fake_black/handle_fake_polja_crni.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+</head>
+<body>
+    <div class="background">
+        
+        <div class="red prvi">
+            <div class="polje broj">8</div>
+            <div id="a8" class="polje bijelo"></div>
+            <div id="b8" class="polje crno"></div>
+            <div id="c8" class="polje bijelo"></div>
+            <div id="d8" class="polje crno"></div>
+            <div id="e8" class="polje bijelo"></div>
+            <div id="f8" class="polje crno"></div>
+            <div id="g8" class="polje bijelo"></div>
+            <div id="h8" class="polje crno"></div>
+        </div>
+
+        
+
+        <div class="red drugi">
+            <div class="polje  broj">7</div>
+            <div id="a7" class="polje crno"></div>
+            <div id="b7" class="polje bijelo"></div>
+            <div id="c7" class="polje crno"></div>
+            <div id="d7" class="polje bijelo"></div>
+            <div id="e7" class="polje crno"></div>
+            <div id="f7" class="polje bijelo"></div>
+            <div id="g7" class="polje crno"></div>
+            <div id="h7" class="polje bijelo"></div>
+        </div>
+
+        <div class="red">
+            <div class="polje  broj">6</div>
+            <div id="a6" class="polje bijelo"></div>
+            <div id="b6" class="polje crno"></div>
+            <div id="c6" class="polje bijelo"></div>
+            <div id="d6" class="polje crno"></div>
+            <div id="e6" class="polje bijelo"></div>
+            <div id="f6" class="polje crno"></div>
+            <div id="g6" class="polje bijelo"></div>
+            <div id="h6" class="polje crno"></div>
+        </div>
+
+        
+
+        <div class="red">
+            <div class="polje  broj">5</div>
+            <div id="a5" class="polje crno"></div>
+            <div id="b5" class="polje bijelo"></div>
+            <div id="c5" class="polje crno"></div>
+            <div id="d5" class="polje bijelo"></div>
+            <div id="e5" class="polje crno"></div>
+            <div id="f5" class="polje bijelo"></div>
+            <div id="g5" class="polje crno"></div>
+            <div id="h5" class="polje bijelo"></div>
+        </div>
+
+        <div class="red">
+            <div class="polje  broj">4</div>
+            <div id="a4" class="polje bijelo"></div>
+            <div id="b4" class="polje crno"></div>
+            <div id="c4" class="polje bijelo"></div>
+            <div id="d4" class="polje crno"></div>
+            <div id="e4" class="polje bijelo"></div>
+            <div id="f4" class="polje crno"></div>
+            <div id="g4" class="polje bijelo"></div>
+            <div id="h4" class="polje crno"></div>
+        </div>
+
+        
+
+        <div class="red">
+            <div class="polje  broj">3</div>
+            <div id="a3" class="polje crno"></div>
+            <div id="b3" class="polje bijelo"></div>
+            <div id="c3" class="polje crno"></div>
+            <div id="d3" class="polje bijelo"></div>
+            <div id="e3" class="polje crno"></div>
+            <div id="f3" class="polje bijelo"></div>
+            <div id="g3" class="polje crno"></div>
+            <div id="h3" class="polje bijelo"></div>
+        </div>
+
+        <div class="red predzadnji">
+            <div class="polje  broj">2</div>
+            <div id="a2" class="polje bijelo"></div>
+            <div id="b2" class="polje crno"></div>
+            <div id="c2" class="polje bijelo"></div>
+            <div id="d2" class="polje crno"></div>
+            <div id="e2" class="polje bijelo"></div>
+            <div id="f2" class="polje crno"></div>
+            <div id="g2" class="polje bijelo"></div>
+            <div id="h2" class="polje crno"></div>
+        </div>
+
+        
+
+        <div class="red zadnji">
+            <div class="polje  broj">1</div>
+            <div id="a1" class="polje crno"></div>
+            <div id="b1" class="polje bijelo"></div>
+            <div id="c1" class="polje crno"></div>
+            <div id="d1" class="polje bijelo"></div>
+            <div id="e1" class="polje crno"></div>
+            <div id="f1" class="polje bijelo"></div>
+            <div id="g1" class="polje crno"></div>
+            <div id="h1" class="polje bijelo"></div>
+        </div>
+
+        <div class="red slova">
+            <div class="polje  slovo">a</div>
+            <div class="polje  slovo">b</div>
+            <div class="polje  slovo">c</div>
+            <div class="polje  slovo">d</div>
+            <div class="polje  slovo">e</div>
+            <div class="polje  slovo">f</div>
+            <div class="polje  slovo">g</div>
+            <div class="polje  slovo">h</div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
